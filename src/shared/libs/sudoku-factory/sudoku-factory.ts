@@ -56,12 +56,7 @@ function shuffleArray<T>(array: T[]): T[] {
   return array;
 }
 
-function isSafe(
-  grid: SudokuGrid,
-  row: number,
-  col: number,
-  num: number,
-): boolean {
+function isSafe(grid: SudokuGrid, row: number, col: number, num: number): boolean {
   for (let i = 0; i < SIZE; i++) {
     if (grid[row][i].value === num || grid[i][col].value === num) {
       return false;

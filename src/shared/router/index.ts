@@ -1,8 +1,4 @@
-import {
-  createHistoryRouter,
-  createRoute,
-  createRouterControls,
-} from 'atomic-router';
+import { createHistoryRouter, createRoute, createRouterControls } from 'atomic-router';
 import { createEvent, sample } from 'effector';
 import { createBrowserHistory } from 'history';
 

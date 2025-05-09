@@ -18,10 +18,7 @@ export const Button = <E extends ElementType = typeof defaultElement>({
 }: ButtonProps<E>) => {
   const TagName = as || defaultElement;
   return (
-    <TagName
-      {...props}
-      className={cn(styles.button, styles[`button_${appearance}`], className)}
-    >
+    <TagName {...props} className={cn(styles.button, styles[`button_${appearance}`], className)}>
       {icon && <DynamicIcon name={icon} />}
       {children && <span>{children}</span>}
     </TagName>

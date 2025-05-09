@@ -8,8 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api:download": "wget http://localhost:3000/api-yaml -O ./src/shared/api/schema.yaml",
-    "api:generate": "orval",
+    "prettify": "prettier --loglevel warn --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'",
     "prepare": "husky"
   },
   "dependencies": {
@@ -50,7 +49,6 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
-    "orval": "^7.8.0",
     "postcss-import": "^16.1.0",
     "prettier": "^3.5.3",
     "prettier-plugin-organize-imports": "^4.1.0",

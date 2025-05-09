@@ -15,10 +15,7 @@ type TextType = {
   display?: never;
 };
 
-type TypographyOwnProps<E extends ElementType = ElementType> = (
-  | DisplayType
-  | TextType
-) &
+type TypographyOwnProps<E extends ElementType = ElementType> = (DisplayType | TextType) &
   PropsWithChildren & {
     className?: string;
     as?: E;
