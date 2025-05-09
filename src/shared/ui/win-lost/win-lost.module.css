@@ -3,7 +3,7 @@
 
 .status_win,
 .status_lost {
-  @apply relative w-full rounded-lg pb-[100%] bg-gradient-to-b;
+  @apply relative w-full rounded-lg bg-gradient-to-b pb-[100%];
 }
 
 .status_win {
@@ -19,11 +19,11 @@
 }
 
 .confetti__item_1 {
-  @apply absolute w-full -top-12 -right-4;
+  @apply absolute -top-12 -right-4 w-full;
 }
 
 .confetti__item_2 {
-  @apply absolute w-full -top-16 -left-4;
+  @apply absolute -top-16 -left-4 w-full;
 }
 
 .title {

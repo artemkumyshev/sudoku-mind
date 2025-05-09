@@ -40,7 +40,7 @@ export const WinLost: FC<WinLostProps> = ({ title, description, status, button }
           <Confetti height={wrapperRef.current?.offsetHeight} width={wrapperRef.current?.offsetWidth} />
         )}
         {status === 'lost' && <Rain />}
-        <Flex direction="column" align="center" gap="2" className="text-white text-center z-20">
+        <Flex direction="column" align="center" gap="2" className="z-20 text-center text-white">
           <Typography as="div" display="2">
             {title}
           </Typography>

@@ -6,7 +6,7 @@
 }
 
 .grid_blur {
-  @apply blur-xs pointer-events-none;
+  @apply pointer-events-none blur-xs;
 }
 
 .grid__row {
@@ -31,7 +31,7 @@
 }
 
 .cell {
-  @apply relative w-full pb-[100%] border-neutral-400;
+  @apply relative w-full border-neutral-400 pb-[100%];
 
   &:not(:last-child) {
     @apply border-r;
@@ -60,7 +60,7 @@
 }
 
 .cell__button {
-  @apply absolute left-0 top-0 flex h-full w-full items-center justify-center text-center;
+  @apply absolute top-0 left-0 flex h-full w-full items-center justify-center text-center;
 }
 
 .keyboard {
@@ -68,10 +68,10 @@
 }
 
 .keyboard__number {
-  @apply relative w-full pb-[100%] border-2 rounded-lg bg-primary-300;
+  @apply bg-primary-300 relative w-full rounded-lg border-2 pb-[100%];
 }
 
 .keyboard__number span {
-  @apply absolute left-0 top-0 flex h-full w-full items-center justify-center text-center;
+  @apply absolute top-0 left-0 flex h-full w-full items-center justify-center text-center;
   @apply text-xl;
 }

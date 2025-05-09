@@ -15,7 +15,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <Flex direction="column" align="center" className=" text-center">
+      <Flex direction="column" align="center" className="text-center">
         <Typography as="h1" display="1">
           {t('app.title')}
         </Typography>

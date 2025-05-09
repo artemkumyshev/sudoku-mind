@@ -123,7 +123,7 @@ const PlayButton: FC = () => {
       type="button"
       appearance="primary"
       icon="play-circle"
-      className="absolute inset-0 w-60 h-10 m-auto"
+      className="absolute inset-0 m-auto h-10 w-60"
       onClick={() => $$game.statusChanged('game')}
     >
       {t('app.play')}

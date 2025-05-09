@@ -18,7 +18,7 @@ a.button_tertiary span {
 .button_primary,
 .button_secondary,
 .button_tertiary {
-  @apply px-4 py-2 rounded-lg border-2 text-center text-neutral-800  border-neutral-600;
+  @apply rounded-lg border-2 border-neutral-600 px-4 py-2 text-center text-neutral-800;
 }
 
 .button_primary:disabled,

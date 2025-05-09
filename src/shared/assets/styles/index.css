@@ -2,5 +2,5 @@
 @import './theme.css';
 
 body {
-  @apply bg-primary-400  text-neutral-800;
+  @apply bg-primary-400 text-neutral-800;
 }

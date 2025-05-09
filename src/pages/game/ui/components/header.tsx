@@ -36,9 +36,9 @@ export const Header: FC = () => {
       <TextWithIcon text={`${t('sudoku.mistakes')}: ${mistakes}/5`} icon={mistakesIcon[mistakes]} />
       {(isIdle || isGame) && icon && (
         <Flex gap="2">
-          <Button className="bg-white p-1.5 rounded-4xl border-2" icon={icon} onClick={toggleGame} />
+          <Button className="rounded-4xl border-2 bg-white p-1.5" icon={icon} onClick={toggleGame} />
           <Button
-            className="bg-white p-1.5 rounded-4xl border-2"
+            className="rounded-4xl border-2 bg-white p-1.5"
             icon="rotate-ccw"
             onClick={() => $$game.restarted()}
           />

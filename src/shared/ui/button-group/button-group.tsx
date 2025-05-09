@@ -18,14 +18,14 @@ export const ButtonGroup: FC<ButtonGroupProps> = ({ items }) => {
   }
 
   return (
-    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-1" role="group">
+    <div className="grid w-full grid-cols-2 gap-1 sm:grid-cols-3" role="group">
       {items.map((item, index) => (
         <button
           key={index}
           type="button"
           onClick={item.onClick}
           className={cn(
-            'w-full px-4 py-2 text-sm font-medium text-center border-2 border-neutral-800 text-neutral-800 transition-colors',
+            'w-full border-2 border-neutral-800 px-4 py-2 text-center text-sm font-medium text-neutral-800 transition-colors',
             {
               'bg-primary-200': item.isActive,
             },

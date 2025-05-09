@@ -4,6 +4,6 @@
   "trailingComma": "all",
   "tabWidth": 2,
   "semi": true,
-  "plugins": ["prettier-plugin-organize-imports"],
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
   "endOfLine": "auto"
 }
