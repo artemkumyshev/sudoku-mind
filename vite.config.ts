@@ -13,6 +13,6 @@ export default defineConfig({
   },
   server: {
     host: true,
-    allowedHosts: ['e372-45-82-253-64.ngrok-free.app'],
+    allowedHosts: ['thenda.ru'],
   },
 });
