@@ -16,13 +16,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
     <Flex direction="column" gap="6" className={styles.layout}>
       <Flex align="center" justify="between" gap="4" className={styles.header}>
         <Flex align="center" gap="2">
-          <Button
-            className={styles.home}
-            activeClassName={styles.home_active}
-            as={Link}
-            to={routes.home}
-            icon="brain"
-          />
+          <Button className={styles.home} as={Link} to={routes.home} icon="brain" />
           <Typography as="span" text="base" className="font-bold uppercase">
             {t('app.name')}
           </Typography>
