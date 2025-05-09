@@ -1,15 +1,15 @@
 import { useClickAway } from '@uidotdev/usehooks';
 import cn from 'classnames';
 import { useUnit } from 'effector-react';
-import { isEqual } from 'lodash';
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Button } from '@/shared/ui/button';
 import { Flex } from '@/shared/ui/flex';
 
+import { isEqual } from '../../lib/is-equal';
 import { $$game } from '../../model';
 
-import { useTranslation } from 'react-i18next';
 import styles from './playground.module.css';
 
 export const Playground: FC = () => {
