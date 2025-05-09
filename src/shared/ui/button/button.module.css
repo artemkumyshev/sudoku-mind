@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+@import '@/shared/assets/styles/theme.css';
+
+.button {
+  @apply flex items-center justify-center gap-1;
+}
+
+a.button span {
+  @apply underline underline-offset-4;
+}
+
+a.button_primary span,
+a.button_secondary span,
+a.button_tertiary span {
+  @apply no-underline;
+}
+
+.button_primary,
+.button_secondary,
+.button_tertiary {
+  @apply px-4 py-2 rounded-lg border-2 text-center text-neutral-800  border-neutral-600;
+}
+
+.button_primary:disabled,
+.button_secondary:disabled,
+.button_tertiary:disabled {
+  @apply opacity-80;
+  @apply bg-neutral-400;
+}
+
+.button_primary {
+  @apply bg-primary-400;
+}
+
+.button_secondary {
+  @apply bg-neutral-200;
+}
+
+.button_tertiary {
+  @apply bg-white;
+}

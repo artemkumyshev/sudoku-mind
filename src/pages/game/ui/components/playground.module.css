@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+@import '@/shared/assets/styles/theme.css';
+
+.grid {
+  @apply flex flex-col border-2;
+}
+
+.grid_blur {
+  @apply blur-xs pointer-events-none;
+}
+
+.grid__row {
+  @apply grid grid-cols-9 border-neutral-400;
+
+  &:not(:last-child) {
+    @apply border-b;
+  }
+
+  &:nth-child(3),
+  &:nth-child(6) {
+    @apply border-b-2;
+  }
+}
+
+.block_even {
+  @apply bg-primary-50;
+}
+
+.block_odd {
+  @apply bg-primary-100;
+}
+
+.cell {
+  @apply relative w-full pb-[100%] border-neutral-400;
+
+  &:not(:last-child) {
+    @apply border-r;
+  }
+
+  &:nth-child(3),
+  &:nth-child(6) {
+    @apply border-r-2;
+  }
+}
+
+.cell_highlight {
+  @apply bg-primary-200;
+}
+
+.cell_select {
+  @apply bg-primary-300;
+}
+
+.cell_answer {
+  @apply bg-primary-300;
+}
+
+.cell_done {
+  @apply bg-green-400;
+}
+
+.cell__button {
+  @apply absolute left-0 top-0 flex h-full w-full items-center justify-center text-center;
+}
+
+.keyboard {
+  @apply grid grid-cols-9 gap-1;
+}
+
+.keyboard__number {
+  @apply relative w-full pb-[100%] border-2 rounded-lg bg-primary-300;
+}
+
+.keyboard__number span {
+  @apply absolute left-0 top-0 flex h-full w-full items-center justify-center text-center;
+  @apply text-xl;
+}

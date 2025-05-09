@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import '@/shared/assets/styles/theme.css';
+
+.layout {
+  @apply max-w-[450px] w-full p-4 mx-auto;
+}
+
+.header,
+.main {
+  @apply bg-primary-50 shadow-primary-800/20;
+}
+
+.header {
+  @apply text-center gap-1 px-4 py-3 rounded-3xl shadow-lg;
+}
+
+.home {
+  @apply p-2 rounded-4xl border-2 bg-white;
+}
+
+.home_active {
+  @apply bg-primary-400;
+}
+
+.action {
+  @apply w-10 h-10 flex items-center justify-center p-1.5 rounded-4xl border-2;
+}
+
+.main {
+  @apply w-full px-4 pt-8 pb-12 rounded-3xl shadow-lg;
+}

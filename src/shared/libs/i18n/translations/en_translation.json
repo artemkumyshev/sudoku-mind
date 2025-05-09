@@ -1,0 +1,32 @@
+{
+  "app": {
+    "name": "Sudoku Mind",
+    "title": "Play Sudoku",
+    "description": "Test your logic and attentiveness in a classic, no-nonsense game.",
+    "play": "Play",
+    "playAgain": "Play again",
+    "loading": "Loading",
+    "changeLevel": "Change level",
+    "check": "Check"
+  },
+  "sudoku": {
+    "levels": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard",
+      "expert": "Expert",
+      "evil": "Evil"
+    },
+    "mistakes": "Mistakes",
+    "status": {
+      "win": {
+        "title": "Congratulations!",
+        "description": "You did it! Puzzle solved!"
+      },
+      "lost": {
+        "title": "It didn't work.",
+        "description": "But that's okay - next time it will definitely come out!"
+      }
+    }
+  }
+}

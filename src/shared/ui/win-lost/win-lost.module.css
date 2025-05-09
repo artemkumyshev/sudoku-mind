@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@import '@/shared/assets/styles/theme.css';
+
+.status_win,
+.status_lost {
+  @apply relative w-full rounded-lg pb-[100%] bg-gradient-to-b;
+}
+
+.status_win {
+  @apply from-primary-500 to-primary-600;
+}
+
+.status_lost {
+  @apply from-neutral-500 to-neutral-600;
+}
+
+.wrapper {
+  @apply absolute inset-0 flex items-center justify-center overflow-hidden rounded-lg;
+}
+
+.confetti__item_1 {
+  @apply absolute w-full -top-12 -right-4;
+}
+
+.confetti__item_2 {
+  @apply absolute w-full -top-16 -left-4;
+}
+
+.title {
+  @apply text-5xl font-bold;
+}
+
+.description {
+  @apply text-2xl;
+}
