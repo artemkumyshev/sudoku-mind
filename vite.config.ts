@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -12,7 +13,12 @@ export default defineConfig({
     },
   },
   server: {
-    host: true,
+    host: '0.0.0.0',
+    port: 3000,
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 3000,
     allowedHosts: ['sudoku.thenda.ru'],
   },
 });
