@@ -10,7 +10,7 @@ import { Status } from './components/status';
 
 import { $$game } from '../model';
 
-export const GamePage = () => {
+const GamePage = () => {
   const { t } = useTranslation();
   const [isCreating] = useUnit([$$game.$isCreating]);
 
@@ -30,3 +30,5 @@ export const GamePage = () => {
     </>
   );
 };
+
+export default GamePage;

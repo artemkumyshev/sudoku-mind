@@ -1,7 +1,9 @@
 import { createRouteView } from 'atomic-router-react';
+import { lazy } from 'react';
 
 import { $$game } from './model';
-import { GamePage } from './ui/page';
+
+const GamePage = lazy(() => import('./ui/page'));
 
 export const GameRoute = {
   view: createRouteView({ route: $$game.currentRoute, view: GamePage }),

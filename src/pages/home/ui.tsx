@@ -9,7 +9,7 @@ import { Flex } from '@/shared/ui/flex';
 import { Typography } from '@/shared/ui/typography';
 import { Link } from 'atomic-router-react';
 
-export const HomePage = () => {
+const HomePage = () => {
   const { t } = useTranslation();
   const [level] = useUnit([$$level.$level]);
 
@@ -36,3 +36,5 @@ export const HomePage = () => {
     </>
   );
 };
+
+export default HomePage;

@@ -1,7 +1,9 @@
 import { createRouteView } from 'atomic-router-react';
+import { lazy } from 'react';
 
 import { routes } from '@/shared/router';
-import { HomePage } from './ui';
+
+const HomePage = lazy(() => import('./ui'));
 
 const currentRoute = routes.home;
 
