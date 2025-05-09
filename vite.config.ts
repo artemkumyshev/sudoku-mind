@@ -13,6 +13,6 @@ export default defineConfig({
   },
   server: {
     host: true,
-    allowedHosts: ['thenda.ru'],
+    allowedHosts: ['sudoku.thenda.ru'],
   },
 });
