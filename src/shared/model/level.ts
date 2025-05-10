@@ -4,7 +4,7 @@ import persist from 'effector-localstorage';
 
 import { SudokuLevel } from '@/shared/libs/sudoku-factory';
 
-const DEFAULT_LEVEL = (localStorage.getItem('level') as SudokuLevel) || null || 'easy';
+const DEFAULT_LEVEL = (localStorage.getItem('level') as SudokuLevel) || 'easy';
 
 export const $$level = atom(() => {
   const changed = createEvent<SudokuLevel>();
