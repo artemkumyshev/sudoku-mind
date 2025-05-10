@@ -12,11 +12,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: {
+  preview: {
     host: true,
-    port: 8000,
-    watch: {
-      usePolling: true,
-    },
+    allowedHosts: ['sudoku.thenda.ru'],
   },
 });
